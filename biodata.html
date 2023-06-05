@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="with=device-width, initial-scale=1.0">
+		<title>Annyeonghasaeyo!!!!</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+<body>
+
+    <div class="hero">
+		<nav>
+			<img src="photo/iffah_1.png" class="logo iffah_1" style="height: 50px;" width="50px">
+			<ul>
+				<li><a href="index.html">My Page</a></li>
+				<li><a href="biodata.html">About</a></li>
+				<li><a href="family.html">My Family</a></li>
+				<li><a href="education.html">Study Study</a></li>
+				<li><a href="experience.html">Life</a></li>
+				<li><a href="gallery.html">Memories</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+
+    <div id="about-myself">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo/me.jpg">
+                </div> 
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>Name given Iffah Batrisyia binti Mohd Nizam, born on 6 April 2001 at the Hospital Besar Pontian, Johor Bharu but I'm staying at Melaka. My favourite food and drink was Kuey Teow Goreng and ice blended vanilla and my favourite color are black, white and all types of blue such as ocean blue, sky blue, dark blue, and lot. I used to live at Pontian, Johor Bharu but only for 4 years because my parents changed their workplace at Melaka. I've got a lot of friends when I'm start to move here and but that's not that fun because it's to dangerous for us, children playing outside. So, I always play play inside my house than outside.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('educations')">Educations</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages Lover</span><br>Bahasa Melayu<br>English<br>Korean<br>Chinese</li>
+                            <li><span>Hardworking</span></li>
+                            <li><span>Fast-Learner</span></li>
+                            <li><span>Good Listener</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educations">
+                        <ul>
+                            <li><span>Tadika Arifmurni</span><br>2006-2007</li>
+                            <li><span>SK Gangsa</span><br>2008-2010</li>
+                            <li><span>SK Bukit Beruang</span><br>2010-2013</li>
+                            <li><span>SMA (JAIM) Al-Asyraf</span><br>2014-2018</li>
+                            <li><span>UiTM Cawangan Negeri Sembilan Kampus Rembau</span><br>2019-2023</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>Tadika Arifmurni Durian Tunggal, Melaka</span><br>Working 2019 (4 month)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+            {
+                for(tablink of tablinks)
+                {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+    </script>
+
+    <footer>
+        <p>@iamiffah</p>
+        <p>For more information, you can click here to contact me.</p>
+            <div class="contact">
+                <a href="https://www.instagram.com/iamiffah/"><img src="photo/instagram.png" width="40px" height="40px"></a>
+                <a href="https://twitter.com/ipahhhhhh__"><img src="photo/twitter.png" width="40px" height="40px"></a>
+                <a href="https://www.tiktok.com/@_apoolaaa_"><img src="photo/tiktok.png" width="40px" height="40px"></i></a>
+            </div>
+        <p class="end">CopyRight© By Iffah Batrisyia</p>
+    </footer>
+
+</body>
+
+</html>
